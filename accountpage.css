@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.top-page{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    background:#1F2833;
+    text-align: center;
+}
+
+.searchbar{
+    padding-top: 15px;
+}
+.searchbar input{
+    height: 36px;
+    width: 761px;
+    left: 340px;
+    top: 14px;
+}
+
+#YouPortfolio{
+    font-size: 36;
+    font-weight: bold;
+    position: absolute;
+    left: 32px;
+    top: 8px; 
+    font-family: Poppins;
+}
+#You{
+    color: white;
+}
+#Portfolio{
+    color: #66FCF1 ;
+}
+
+.coverPhoto{
+    position: absolute;
+    width: 100%;
+    height: 331px;
+    left: -1px;
+    top: 64px;
+    background-color: aquamarine;
+}
+
+.profilePicture img{
+    position: absolute;
+    width: 190px;
+    height: 186px;
+    top: 290px;
+    left: 46px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.userBanner{
+    position: absolute;
+    width: 100%;
+    height: 137px;
+    top: 396px;
+    background-color: #1F2833;
+}
+
+.FeelingBar img{
+    position: absolute;
+    width: 86px;
+    height: 84px;
+    left: 275px;
+    top: 577px;
+    border: 4px solid black;
+    border-radius: 50%;
+
+}
+.FeelingBar input{
+    position: absolute;
+    width: 837px;
+    height: 89px;
+    left: 386px;
+    top: 574px;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#UserWorks{
+    position: absolute;
+    width: 547px;
+    height: 54px;
+    left: 55px;
+    top: 713px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+#Username{
+    color: #1F2833;
+}
+#Works{
+    color: #66FCF1;
+}
+.Projects *{
+    width: 263px;
+    height: 253px;
+    background-color: gray;
+}
+#work1{
+    position: absolute;
+    top: 789px;
+    left: 49px;
+}
+#work2{
+    position: absolute;
+    top: 789px;
+    left: 318px;
+}
+#work3{
+    position: absolute;
+    top: 789px;
+    left: 587px;
+}
+#work4{
+    position: absolute;
+    top: 789px;
+    left: 856px; 
+}
+#work5{
+    position: absolute;
+    top: 789px;
+    left: 1125px;
+}

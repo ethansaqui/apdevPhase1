@@ -1,0 +1,45 @@
+* {
+   
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+}
+
+.top-page {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    background: #1F2833;
+    text-align: center;
+}
+
+
+.searchbar {
+    padding-top: 10px;
+}
+
+input[type=search] {
+    width: 761px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    width: min(10vw, 253px);
+    height: 100%;
+    background-color: rgba(31,40,51,.9);
+}
+
+.posts-wrapper {
+    float: right;
+    margin: 100 120 0 0;
+    height: 75%;
+    width: 75%;
+    background-color: black;
+}

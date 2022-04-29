@@ -1,45 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 * {
-   
     margin: 0px;
+    
 }
 
 body {
     margin: 0;
 }
 
-.top-page {
+.top-page{
     position: relative;
     width: 100%;
-    height: 5%;
-    background: #1F2833;
+    height: 65px;
+    background:#1F2833;
     text-align: center;
 }
 
+/* FROM GABE */
+#YouPortfolio{
+    font-size: 36;
+    position: absolute;
+    left: 4%;
+    top: 8px; 
+    font-family: Poppins;
+    user-select: none;
+    font-weight: 100;
+    color: white;
+}
+
+#You {
+    font-family: Poppins, sans-serif;
+}
+
+#Portfolio {
+    font-weight: 800;
+    color: #66FCF1 ;
+}
+
+#upload{
+    position: absolute;
+    width: 117px;
+    height: 23px;
+    left: 80%;
+    top: 22px;
+    background: #66FCF1;
+    border-radius: 35px;
+    font: 14px Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+#upload:hover {
+    background-color: #1F2833;
+    color: #66FCF1;
+    font-weight: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* */
 
 .searchbar {
+    text-align: center;
     padding-top: 10px;
 }
 
-input[type=search] {
+.searchbar input[type=search] {
+    position: absolute;
+    height: 36px;
     width: 761px;
-    height: 30px;
-    background-color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
+    left: 27%;
+    top: 14px;
+}
+
+#post-sidebar-wrapper {
+    overflow: auto;
 }
 
 .sidebar {
-    position: fixed;
-    width: min(10vw, 253px);
+    float: left;
+    position: relative;
+    width: 15%;
     height: 100%;
     background-color: rgba(31,40,51,.9);
+    z-index: -1;
 }
 
 .posts-wrapper {
     float: right;
-    margin: 10 0 0 0;
+    position: relative;
+    z-index: -1;
+    margin: 0 30 0 0;
     height: 100%;
-    width: 90%;
-    background-color: black;
+    width: 80%;
+    background-color: cornsilk;
+}
+
+.your-feed {
+    font: 50px Poppins;
+    font-weight: 800;
+    color: #1F2833;
+}
+
+.your-feed > span {
+    color: #66FCF1;
+}
+
+.welcome {
+    font: 16px Poppins;
+    font-weight: 500;
+    color: #1F2833;
+}
+
+/* POSTS */
+.posts {
+    
 }

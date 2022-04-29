@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
 *{
     margin: 0px;
@@ -11,29 +12,64 @@
     background:#1F2833;
     text-align: center;
 }
-
+.top-page img{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 11px;
+    left: 90%;
+    border-radius: 50%;
+    background-color: white;
+}
+#upload{
+    position: absolute;
+    width: 117px;
+    height: 23px;
+    left: 80%;
+    top: 22px;
+    background: #66FCF1;
+    border-radius: 35px;
+    font: 14px Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+#upload:hover {
+    background-color: #1F2833;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font: 14px Poppins, sans-serif;
+    color: #66FCF1;
+    font-weight: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .searchbar{
     padding-top: 15px;
 }
 .searchbar input{
+    position: absolute;
     height: 36px;
     width: 761px;
-    left: 340px;
+    left: 27%;
     top: 14px;
 }
 
 #YouPortfolio{
     font-size: 36;
-    font-weight: bold;
     position: absolute;
-    left: 32px;
+    left: 4%;
     top: 8px; 
     font-family: Poppins;
 }
 #You{
+    font-weight: 100px;
     color: white;
 }
 #Portfolio{
+    font-weight: 800px;
     color: #66FCF1 ;
 }
 
@@ -45,13 +81,18 @@
     top: 64px;
     background-color: aquamarine;
 }
+.coverPhoto img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 .profilePicture img{
     position: absolute;
     width: 190px;
     height: 186px;
     top: 290px;
-    left: 46px;
+    left: 4%;
     border-radius: 50%;
     background-color: white;
     z-index: 2;
@@ -64,12 +105,115 @@
     top: 396px;
     background-color: #1F2833;
 }
+#User{
+    position:absolute;
+    font-size: 30px;
+    font-family: poppins;
+    left: 17%;
+    color: white;
+    width: 280px;
+    height: 45px;
+}
+#followers1{
+    position: absolute;
+    width: 125px;
+    height: 38px;
+    left: 37%;
+    top: 21px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 400;
+    line-height: 22px;
+}
+#followercount{
+    color: white;
+}
+#followers{
+    color: #66FCF1;
+}
+#following1{
+    position: absolute;
+    top: 21px;
+    left: 47%;
+    width: 427px;
+    height: 38px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 400;
+    line-height: 22px;
+}
+#followingcount{
+    color: white;
+}
+#following{
+    color: #66FCF1;
+}
+#followButton{
+    position: absolute;
+    width: 117px;
+    height: 23px;
+    left: 56%;
+    top: 21px;
+    background-color: #66FCF1;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font: 14px Poppins, sans-serif;
+    font: weight 400px;;
+    text-align: center;
+    color: #1F2833;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#followButton:hover {
+    background-color: #1F2833;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font: 14px Poppins, sans-serif;
+    color: #66FCF1;
+    font-weight: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#CommissionBox{
+    position: absolute;
+    width: 178px;
+    height: 75px;
+    left: 87%;
+    top: 50px;
+    background-color: #66FCF1;
+}
+#Details1{
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+#email:hover{
+    border-bottom-style: solid;
+    color: #1F2833;
+}
+
+#Bio{
+    position: absolute;
+    width: 565px;
+    height: 55px;
+    left: 17%;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
 
 .FeelingBar img{
     position: absolute;
     width: 86px;
     height: 84px;
-    left: 275px;
+    left: 22%;
     top: 577px;
     border: 4px solid black;
     border-radius: 50%;
@@ -79,7 +223,7 @@
     position: absolute;
     width: 837px;
     height: 89px;
-    left: 386px;
+    left: 29%;
     top: 574px;
     background-color: white;
     border: 1px solid black;
@@ -91,7 +235,7 @@
     position: absolute;
     width: 547px;
     height: 54px;
-    left: 55px;
+    left: 5%;
     top: 713px;
     font-family: Poppins;
     font-style: normal;
@@ -113,25 +257,25 @@
 #work1{
     position: absolute;
     top: 789px;
-    left: 49px;
+    left: 5%;
 }
 #work2{
     position: absolute;
     top: 789px;
-    left: 318px;
+    left: 24%;
 }
 #work3{
     position: absolute;
     top: 789px;
-    left: 587px;
+    left: 43%;
 }
 #work4{
     position: absolute;
     top: 789px;
-    left: 856px; 
+    left: 62%; 
 }
 #work5{
     position: absolute;
     top: 789px;
-    left: 1125px;
+    left: 81%;
 }

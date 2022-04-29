@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
     margin: 0px;
-    
+
 }
 
-body {
-    margin: 0;
+h1 {
+    user-select: none;
 }
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow:visible;
+}
+
 
 .top-page{
     position: relative;
@@ -63,7 +69,7 @@ body {
     font-weight: 400px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* */
+/* END OF GABE CODE */
 
 .searchbar {
     text-align: center;
@@ -78,13 +84,8 @@ body {
     top: 14px;
 }
 
-#post-sidebar-wrapper {
-    overflow: auto;
-}
-
 .sidebar {
     float: left;
-    position: relative;
     width: 15%;
     height: 100%;
     background-color: rgba(31,40,51,.9);
@@ -93,17 +94,15 @@ body {
 
 .posts-wrapper {
     float: right;
-    position: relative;
-    z-index: -1;
-    margin: 0 30 0 0;
+    margin: 0 0 0 0;
     height: 100%;
     width: 80%;
-    background-color: cornsilk;
+    overflow: auto;
 }
 
 .your-feed {
     font: 50px Poppins;
-    font-weight: 800;
+    font-weight: 600;
     color: #1F2833;
 }
 
@@ -113,11 +112,66 @@ body {
 
 .welcome {
     font: 16px Poppins;
-    font-weight: 500;
+    font-weight: bold;
+    font-stretch: condensed;
     color: #1F2833;
+}
+
+/* Categories */
+.sidebar > h1 {
+    margin-top: 20px;
+    font: 32px Poppins;
+    font-weight: 700;
+    color:#66FCF1;
+    text-align: center;
+}
+
+
+.sidebar > ul > li {
+    color:white;
+    font: 17px Poppins;
+    font-weight: 400;
+    margin: 10 0 0 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#1F2833;
+    transition: all 250ms ease-in;
 }
 
 /* POSTS */
 .posts {
-    
+    background-color: beige;
+}
+
+.post-image {
+    position: relative;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+
+.post-quality {
+    background-color: black;
+    height: 20px;
+    width: 40px;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.post-profile {
+    height: 40px;
+    width: 40px;
+}
+
+.posts > div {
+    width: 100%;
+    padding: 30 0 30 0;
+    text-align: center;
 }

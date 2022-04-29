@@ -79,7 +79,7 @@ html, body {
 .searchbar input[type=search] {
     position: absolute;
     height: 36px;
-    width: 761px;
+    width: 50%;
     left: 27%;
     top: 14px;
 }

@@ -12,17 +12,17 @@
 
     <body>
         <!-- Top of the Page -->
-        <div class="top-page">
+        <nav class="top-page">
             <div class="searchbar">
                 <form>
                     <input type="search" placeholder="Search">
                 </form>
             </div>
-            <h1 id="YouPortfolio">
-                <span id="You">You</span><span id="Portfolio">Portfolio</span>. 
-            </h1>
+                <h1 id="YouPortfolio">
+                    <span id="You">You</span><span id="Portfolio">Portfolio</span>. 
+                </h1>
             <div id="upload">Upload</div>
-        </div>
+            </nav>
 
         <div class="sidebar">
             <h1>Categories</h1>
@@ -52,17 +52,37 @@
             </div>
             <!--Posts go here [FIX BUG WHERE THE IMAGE DOESN'T COMPLETELY APPEAR CUZ OF SCROLLING HEIGHTS]--> 
             <div class="posts">
-                <div>
-                    <img class="post-image" src="NRTK.jpg"/>
-                    <span class="post-quality">
+                <div class="parent">
+                    <div class="child">
+                        <div class="image-container">
+                            <img class="post-image" src="NRTK.jpg"/>
+                        </div>
+                        
+                        <div class="comment-box">
+                            
+                        </div>
+                    </div>
+
+                    <div class="post-quality">
                         <img class="post-profile" src="guest.png"/>
-                    </span>
+                    </div>
                 </div>
-                <div>
-                    <img class="post-image" src="Rosier.jpg"/>
-                    <span class="post-quality">
-                      
-                    </span>
+                
+                
+                <div class="parent">
+                    <div class="child">
+                        <div class="image-container">
+                            <img class="post-image" src="Rosier.jpg"/>
+                        </div>
+                        
+                        <div class="comment-box">
+                            
+                        </div>
+                    </div>
+
+                    <div class="post-quality">
+                        <img class="post-profile" src="guest.png"/>
+                    </div>
                 </div>
             </div>
         </div>

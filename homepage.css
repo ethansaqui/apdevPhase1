@@ -193,10 +193,62 @@ a:hover {
 .comment-box {
     background-color:rgb(31,40,51,.8);
     border-radius: 20px;
-    height: 20%;
     margin: auto;
     margin-top: -25;
     overflow:hidden;
+    display: inline-block;
+    width: 60vw;
+    height: 9vw;
+}
+
+.comment-picture-container {
+    width: 9vw;
+    height: 9vw;
+    overflow:hidden;
+    margin-top: 2vh;
+    float: left;
+}
+
+#comment-picture {
+    width: 60%;
+    height: 60%;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+}
+
+#comment-picture > img {
+    border-radius: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.comment-data {
+    height: 100%;
+    color: white;
+    float: left;
+    text-align: left;
+    margin-top: 5vh;
+}
+
+#profile-name {
+    font-size: 1vw;
+    font-family: Poppins;
+    font-weight: 400;
+    color:#66FCF1;
+}
+
+#comment {
+    font-size: 1.3vw;
+    font-family: Poppins;
+    font-weight: 400;
 }
 
 .post-profile {

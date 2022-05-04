@@ -4,27 +4,76 @@
     margin: 0px;
     box-sizing: border-box;
 }
-.top-page{
-    position: absolute;
+.top-page {
+    z-index: 10;
+    position: fixed;
     width: 100%;
     height: 65px;
     background:#1F2833;
     text-align: center;
+    display: inline-block;
 }
-.top-page img{
-    position: absolute;
-    width: 43px;
-    height: 43px;
-    top: 11px;
-    left: 90%;
+
+.nav-bar-profile {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 2vw;
+    position: relative;
+}
+
+.nav-bar-pfp {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    background-color: white;
+    border: #000000;
 }
+
+#YouPortfolio {
+    font-size: 2vw;
+    position: absolute;
+    left: 4%;
+    top: 8px; 
+    font-family: Poppins;
+    user-select: none;
+    font-weight: 100;
+    color: white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:767px) {
+    #YouPortfolio {
+    font-size: 2vw;
+    position: absolute;
+    left: 4%;
+    top: 8px; 
+    font-family: Poppins;
+    user-select: none;
+    font-weight: 100;
+    color: white;
+    padding: 10px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+}
+
+
+#You {
+    font-family: Poppins, sans-serif;
+}
+
+#Portfolio {
+    font-weight: 800;
+    color: #66FCF1 ;
+}
+
 #upload{
     position: absolute;
     width: 117px;
     height: 23px;
-    left: 80%;
+    left: 73vw;
     top: 22px;
     background: #66FCF1;
     border-radius: 35px;
@@ -36,37 +85,25 @@
     color: #FFFFFF;
     z-index: 2;
 }
+
 #upload:hover {
     background-color: #1F2833;
     color: #66FCF1;
-    font-weight: 400;
+    font-weight: 400px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.searchbar{
-    padding-top: 15px;
-}
-.searchbar input{
-    position: absolute;
-    height: 36px;
-    width: 761px;
-    left: 27%;
-    top: 14px;
+
+.searchbar {
+    text-align: center;
+    padding-top: 10px;
 }
 
-#YouPortfolio{
-    font-size: 36;
+.searchbar input[type=search] {
     position: absolute;
-    left: 4%;
-    top: 8px; 
-    font-family: Poppins;
-}
-#You{
-    font-weight: 100;
-    color: white;
-}
-#Portfolio{
-    font-weight: 800;
-    color: #66FCF1 ;
+    height: 36px;
+    width: 20vw;
+    left: 40vw;
+    top: 14px;
 }
 
 .coverPhoto{
@@ -247,29 +284,45 @@
     width: 263px;
     height: 253px;
     background-color: gray;
+    margin-bottom: 10px;
 }
 #work1{
     position: absolute;
     top: 789px;
     left: 5%;
 }
+#work1 img{
+    object-fit: cover;
+}
 #work2{
     position: absolute;
     top: 789px;
     left: 24%;
+}
+#work2 img{
+    object-fit: cover;
 }
 #work3{
     position: absolute;
     top: 789px;
     left: 43%;
 }
+#work3 img{
+    object-fit: cover;
+}
 #work4{
     position: absolute;
     top: 789px;
     left: 62%; 
 }
+#work4 img{
+    object-fit: cover;
+}
 #work5{
     position: absolute;
     top: 789px;
     left: 81%;
+}
+#work5 img{
+    object-fit: cover;
 }

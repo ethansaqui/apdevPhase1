@@ -199,6 +199,7 @@ a:hover {
     background-size:cover;
     display: flex;
     position: relative;
+    z-index: 1;
 }
 
 .post-image {
@@ -207,6 +208,7 @@ a:hover {
     object-fit: cover;
     flex-shrink: 2;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 500ms;
 }
 
 /* Image Hover Code */
@@ -266,14 +268,29 @@ a:hover {
 .comment-box {
     background-color:rgb(31,40,51,.8);
     border-radius: 20px;
-    margin: auto;
     margin-top: -25;
-    overflow:hidden;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    width: 60vw;
+    height: 10vw;
+    position: relative;
+    transition: 500ms;
+}
+
+.comment-container {
+    position: relative;
     display: inline-block;
     width: 60vw;
-    height: 9vw;
-    position: relative;
-    z-index: -3;
+    height: 8vw;
+}
+
+.extend {
+    height: 13vw;
+    transition: ease-in-out 500ms;
+}
+
+.reveal {
+    height: auto;
 }
 
 .comment-picture-container {
@@ -311,24 +328,40 @@ a:hover {
     float: left;
     text-align: left;
     margin-top: 5vh;
-    margin-right: 5vh
+    margin-right: 7vh
 }
 
-.show-all-comments {
+.show-replies {
     width: 10%;
     height: 70%;
     float: right;
-    background-image: url(arrow-down.png);
-    background-size: 100% 100%;
-    margin-top: 4vh;
+    margin-top: 6vh;
     margin-right: 1vw;
+}
+
+.show-button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.show-button > img {
+    background: none;
+    height: 2vw;
+    width: 2vw;
+    transition: 500ms;
+}
+
+.rotate-button {
+    transform: rotate(-90deg);
+    transition: 500ms;
 }
 
 #profile-name {
     font-size: 1vw;
     font-family: Poppins;
     font-weight: 400;
-    color:#66FCF1;
+    color: #66FCF1;
 }
 
 #comment {
@@ -338,6 +371,75 @@ a:hover {
     position: absolute;
     text-align: justify;
     margin-right: 8vw;
+}
+
+.reply-container {
+    width: 60vw;
+    height: 3vw;
+}
+
+.display-replies {
+    display: none;
+    background-color: #000000;
+}
+
+.reply-picture-container {
+    width: 5vw;
+    height: 5vw;
+    overflow:visible;
+    float: left;
+}
+
+#reply-picture {
+    width: 3vw;
+    height: 3vw;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    margin-left: 70%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+}
+
+#reply-picture > img {
+    border-radius: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.reply-data {
+    height: 100%;
+    color: white;
+    float: left;
+    text-align: left;
+    margin-left: 3vw;
+}
+
+#reply-name {
+    font-size: 1vw;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #66FCF1;
+}
+
+#reply {
+    font-size: clamp(0.1vw, 0.7vw, 1vw);
+    font-family: Poppins;
+    font-weight: 400;
+    position: absolute;
+    text-align: justify;
+    margin-right: 8vw;
+}
+
+.show-replies-2 {
+    width: 10%;
+    height: 70%;
+    float: right;
+    margin-top: 1vh;
+    margin-right: 3vw;
 }
 
 /* Post Info and Quality */
@@ -429,3 +531,29 @@ a:hover {
     margin-top: 0.2vw;
 }
 
+/* SCROLL BAR CODE
+    Taken From: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: auto;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -282,6 +282,7 @@ a:hover {
     display: inline-block;
     width: 60vw;
     height: 8vw;
+    transition: 500ms;
 }
 
 .extend {
@@ -328,7 +329,8 @@ a:hover {
     float: left;
     text-align: left;
     margin-top: 5vh;
-    margin-right: 7vh
+    margin-right: 7vh;
+    transition: 500ms;
 }
 
 .show-replies {

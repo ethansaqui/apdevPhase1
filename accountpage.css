@@ -72,7 +72,7 @@
 #upload{
     position: absolute;
     width: 117px;
-    height: 23px;
+    height: 27px;
     left: 73vw;
     top: 22px;
     background: #66FCF1;
@@ -87,6 +87,98 @@
 }
 
 #upload:hover {
+    background-color: #1F2833;
+    color: #66FCF1;
+    font-weight: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: none;
+}
+
+.popup .Content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 849px;
+    height: 572px;
+    transform: translate(-50%, -50%) scale(0);
+    background-color:#1F2833;
+    z-index: 4;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .Content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup.cancel .overlay{
+    display: none;
+}
+.popup.cancel .Content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.UploadBox{
+    position: absolute;
+    width: 815px;
+    height: 382px;
+    left: 17px;
+    top: 15px; 
+    background: white;
+}
+
+.UploadBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#CaptionBox input[type=caption]{
+    position: absolute;
+    width: 814px;
+    height: 89px;
+    left: 18px;
+    top: 419px;
+    background: white; 
+}
+
+#ConfirmUpload{
+    position: absolute;
+    left: 196px;
+    top: 530px;
+    background-color: #66FCF1;
+    border-radius: 35px;
+    width: 117px;
+    height: 23px;  
+}
+#Cancel{
+    position: absolute;
+    left: 513px;
+    top: 530px;
+    background-color: #66FCF1;
+    border-radius: 35px;
+    width: 117px;
+    height: 23px;  
+}
+#Cancel:hover {
+    background-color: #1F2833;
+    color: #66FCF1;
+    font-weight: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#ConfirmUpload:hover {
     background-color: #1F2833;
     color: #66FCF1;
     font-weight: 400px;

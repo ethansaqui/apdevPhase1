@@ -1,11 +1,365 @@
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
+        <link rel="stylesheet" href="homepage.css">
+        <script src="jquery-3.6.0.min.js">
+        </script>
+        <script src="homepage.js">
+        </script>
         <title>
-
+            YouPortfolio
         </title>
     </head>
 
     <body>
+        <!-- Top of the Page -->
+        <nav class="top-page">
+            <div class="searchbar">
+                <form>
+                    <input type="search" placeholder="Search">
+                </form>
+            </div>
+                <h1 id="YouPortfolio">
+                    <span id="You">You</span><span id="Portfolio">Portfolio</span>. 
+                </h1>
+            <div id="upload">Upload</div>
+            <div class="nav-bar-profile">
+                <a href="accountpage.html"><img class="nav-bar-pfp" src="anya.png"/></a>
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <h1>Categories</h1>
+            <ul style="list-style-type:none">
+                <li><a> Photography </a></li>
+                <li><a> Digital Art </a></li>
+                <li><a> Anime </a></li>
+                <li><a> Animation </a></li>
+                <li><a> Videography </a></li>
+                <li><a> Illustration </a></li>
+                <li><a> UX/UI Design </a></li>
+                <li><a> Graphic Design </a></li>
+                <li><a> Others </a></li>
+            </ul>
+
+            <h1>Following</h1>
+            <ul style="list-style-type:none">
+                <li><a> TheLegend69 </a></li>
+                <li><a> Ramdayo </a></li>
+                <li><a> Velephyr </a></li>
+                <li><a> Shire </a></li>
+                <li><a> GawrGuna </a></li>
+                <li><a> Kannare </a></li>
+            </ul>
+        </div>
+
+    
+        <!-- Posts -->
         
+        <div class="posts-wrapper">
+            <div>
+                <h1 class="your-feed">
+                    Your <span>Feed</span>.
+                </h1>
+                <p class="welcome"> &nbsp The latest and greatest for you, Anya</p>
+            </div>
+    
+            <div class="posts">
+                <!-- 1 -->
+                <div class="parent">
+                    <div class="child">
+                        <!-- Post Image -->
+                        <div class="image-container">
+                            <div class="black-overlay-top">
+                                <div class="caption">
+                                    Nearl the Radiant Knight
+                                </div>
+                            </div>
+                            <div class="black-overlay-btm">
+                                <div class="artist">
+                                    Velephyr
+                                </div>
+                            </div>
+                            <img class="post-image" src="NRTK.jpg"/>
+                        </div>
+                        <!-- Comments -->
+                        <div class="comment-box">
+                            <div class="comment-container">
+                                <div class="comment-picture-container">
+                                    <div id="comment-picture">
+                                         <img src="anya.png"/>
+                                    </div>
+                                </div>
+                                <div class="comment-data">
+                                    <div id="profile-name">
+                                            Anya
+                                    </div>
+                                    <div id="comment">
+                                            This is so good I love you Velephyr!!!!
+                                    </div>
+                                </div>
+                                <div class="show-replies">
+                                    <button type="button" class="show-button">
+                                        <img class="reply-button" src="arrow-right.png"/> 
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="reply-container">
+                                <div class="reply-picture-container">
+                                    <div id="reply-picture">
+                                         <img src="kazuma.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="reply-data">
+                                    <div id="reply-name">
+                                            Kazuma
+                                    </div>
+                                    <div id="reply">
+                                            Ikr! Its really well done
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-container">
+                                <div class="comment-picture-container">
+                                    <div id="comment-picture">
+                                         <img src="Shire.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="comment-data">
+                                    <div id="profile-name">
+                                            Shire
+                                    </div>
+                                    <div id="comment">
+                                            This is great!
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Sidebar with Likes -->
+                    <div class="post-quality">
+                        <div class="likes">
+                            <div id="heart">
+                                <img src="empty-heart.png"/>
+                            </div>
+                            <div id="like-count">5.4k</div>
+                        </div>
+
+                        <div class="profile-pic-container">
+                            <div id="profile-picture">
+                                <img src="Velephyr.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2 -->
+                <div class="parent">
+                    <div class="child">
+                        <div class="image-container">
+                            <div class="black-overlay-top">
+                                <div class="caption">
+                                    Elden Ring - MockupElden Ring - Mockup
+                                </div>
+                            </div>
+                            <div class="black-overlay-btm">
+                                <div class="artist">
+                                    WinomaS
+                                </div>
+                            </div>
+                            <img class="post-image" src="elder-ring-winomas.png"/>
+                        </div>
+                        
+                        <div class="comment-box">
+                            <div class="comment-picture-container">
+                                <div id="comment-picture">
+                                     <img src="Shire.jpg"/>
+                                </div>
+                            </div>
+                            <div class="comment-data">
+                                <div id="profile-name">
+                                        Shire
+                                </div>
+                                <div id="comment">
+                                        YOOOOOOO
+                                </div>
+                            </div>
+                            <div class="show-replies">
+              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-quality">
+                        <div class="likes">
+                            <div id="heart">
+                                <img src="empty-heart.png"/>
+                            </div>
+                            <div id="like-count">1.2k</div>
+                        </div>
+                        <div class="profile-pic-container">
+                            <div id="profile-picture">
+                                <img src="winomas.png"/>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- 3 -->
+                <div class="parent">
+                    <div class="child">
+                        <div class="image-container">
+                            <div class="black-overlay-top">
+                                <div class="caption">
+                                    SAO & Camellia - Möbius
+
+MVイラスト＆ジャケットを担当させていただきました。
+最終決戦に相応しい最恐激ヤバ楽曲です⚡️何卒！
+                                </div>
+                                
+                            </div>
+                            <div class="black-overlay-btm">
+                                <div class="artist">
+                                    ramdayo1122
+                                </div>
+                            </div>
+                            <img class="post-image" src="mobius.jpg"/>
+                        </div>
+                        <div class="comment-box">
+                            <div class="comment-picture-container">
+                                <div id="comment-picture">
+                                     <img src="anya.png"/>
+                                </div>
+                            </div>
+                            <div class="comment-data">
+                                <div id="profile-name">
+                                        Anya
+                                </div>
+                                <div id="comment">
+                                        I like these kinds of works
+                                </div>
+                            </div>
+                            <div class="show-replies">
+              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-quality">
+                        <div class="likes">
+                            <div id="heart">
+                                <img src="empty-heart.png"/>
+                            </div>
+                            <div id="like-count">28.3k</div>
+                        </div>
+                        <div class="profile-pic-container">
+                            <div id="profile-picture">
+                                <img src="ramdayo.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="parent">
+                    <div class="child">
+                        <div class="image-container">
+                            <div class="black-overlay-top">
+                                <div class="caption">
+                                    Oreki and Chitanda
+                                </div>
+                            </div>
+                            <div class="black-overlay-btm">
+                                <div class="artist">
+                                    mery__S2_
+                                </div>
+                            </div>
+                            <img class="post-image" src="hyouka.jpg"/>
+                        </div>
+                        <div class="comment-box">
+                            <div class="comment-picture-container">
+                                <div id="comment-picture">
+                                     <img src="Haachama.jpg"/>
+                                </div>
+                            </div>
+                            <div class="comment-data">
+                                <div id="profile-name">
+                                        Poije
+                                </div>
+                                <div id="comment">
+                                        This is good!
+                                </div>
+                            </div>
+                            <div class="show-all-comments">
+              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-quality">
+                        <div class="likes">
+                            <div id="heart">
+                                <img src="empty-heart.png"/>
+                            </div>
+                            <div id="like-count">420</div>
+                        </div>
+                        <div class="profile-pic-container">
+                            <div id="profile-picture">
+                                <img src="mery__S2_.jpg"/>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- 5 -->
+                <div class="parent">
+                    <div class="child">
+                        <div class="image-container">
+                            <div class="black-overlay-top">
+                                <div class="caption">
+                                    heysowhatiftherewasasequeltomygameideaandNelgotaredesign.png
+                                </div>
+                            </div>
+                            <div class="black-overlay-btm">
+                                <div class="artist">
+                                    Yudou
+                                </div>
+                            </div>
+                            <img class="post-image" src="yudou-pixel-art.png"/>
+                        </div>
+                        <div class="comment-box">
+                            <div class="comment-picture-container">
+                                <div id="comment-picture">
+                                     <img src="anya.png"/>
+                                </div>
+                            </div>
+                            <div class="comment-data">
+                                <div id="profile-name">
+                                        LBM South
+                                </div>
+                                <div id="comment">
+                                       Can I use this for the game I'm making?
+                                </div>
+                            </div>
+                            <div class="show-all-comments">
+              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-quality">
+                        <div class="likes">
+                            <div id="heart">
+                                <img src="empty-heart.png"/>
+                            </div>
+                            <div id="like-count">69</div>
+                        </div>
+                        <div class="profile-pic-container">
+                            <div id="profile-picture">
+                                <img src="yudou.jpg"/>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+
     </body>
 </html>

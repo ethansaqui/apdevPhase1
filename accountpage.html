@@ -4,6 +4,7 @@
             YouAccount
         </title>
         <link rel="stylesheet" href="accountpage.css">
+        <script src="accountpage.js" ></script>
     </head>
 
     <body>
@@ -19,7 +20,24 @@
             <div class="nav-bar-profile">
                 <img class="nav-bar-pfp" src="anya.png"/>
             </div>
-            <div id="upload">Upload</div>    
+            <button id="upload" onclick="toggleUpload()">Upload</button>    
+        </div>
+        <div class="popup" id="uploadpopup">
+            <div class="overlay"></div>
+            <div class="Content">
+                <div class="UploadBox">
+                    <a href = "C:\Users"> <img src="UploadPlaceHolder.jpg"> </a> 
+                </div>
+                <div id="CaptionBox">
+                    <form>
+                        <input type="Caption" placeholder="Insert Caption Here">
+                    </form>
+                </div>
+                <div id="popupButtons">
+                    <button id="ConfirmUpload">Upload</button>
+                    <button id="Cancel" onclick="cancelUpload()">Cancel</button>
+                </div>
+            </div>
         </div>
         <div class="coverPhoto">
             <img src="SPyFamily.png" alt="CoverPic">

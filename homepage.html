@@ -22,12 +22,29 @@
                 <h1 id="YouPortfolio">
                     <span id="You">You</span><span id="Portfolio">Portfolio</span>. 
                 </h1>
-            <div id="upload">Upload</div>
+                <button id="upload" onclick="toggleUpload()">Upload</button>
             <div class="nav-bar-profile">
                 <a href="accountpage.html"><img class="nav-bar-pfp" src="anya.png"/></a>
             </div>
         </nav>
-
+        <!-- Upload Pop Up-->
+        <div class="popup" id="uploadpopup">
+            <div class="overlay"></div>
+            <div class="Content">
+                <div class="UploadBox">
+                    <a href = "C:\Users"> <img src="UploadPlaceHolder.jpg"> </a> 
+                </div>
+                <div id="CaptionBox">
+                    <form>
+                        <input type="Caption" placeholder="Insert Caption Here">
+                    </form>
+                </div>
+                    <button id="ConfirmUpload">Upload</button>
+                    <button id="Cancel" onclick="toggleUpload()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <!-- End of Upload Pop Up-->
         <div class="sidebar">
             <h1>Categories</h1>
             <ul style="list-style-type:none">

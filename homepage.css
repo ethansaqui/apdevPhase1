@@ -648,3 +648,66 @@ a:hover {
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  /* Popup modal for images */
+
+.posts-wrapper .popup-image {
+    position: fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.99);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.posts-wrapper .popup-image span {
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.posts-wrapper .popup-image .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    object-fit: cover;
+}
+
+.posts-wrapper .popup-image .caption {
+    position: fixed;
+    width: 13vw;
+    font-size:20px;
+    left: 3vw;
+    top: 5vh;
+}
+
+.posts-wrapper .popup-image .artist {
+    position: fixed;
+    width: 13vw;
+    font-size:20px;
+    bottom: 0;
+    right:0;
+}
+
+.posts-wrapper .popup-image .profile-pic-container {
+    top: 30;
+    right: 5vw;
+    position: fixed;
+
+}
+
+@media (max-width:768px ) {
+    .posts-wrapper .popup-image img {
+        width: 400px;
+    }
+}

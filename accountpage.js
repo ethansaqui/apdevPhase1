@@ -7,24 +7,69 @@ function DeleteWork(clicked_id){
     switch(UsedId)
     {
         case 'Delete1':
-            document.getElementById("Art1").src = "Unavailable.png";
-            document.getElementById("Art1").style.objectFit = "contain";
+            document.getElementById("work1").id = "Deleted"
+            if(document.getElementById("work2") !== null)
+            {
+                document.getElementById("work2").id = "work1"
+                document.getElementById("Delete2").id = "Delete1"
+            }
+            if(document.getElementById("work3") !== null)
+            {
+                document.getElementById("work3").id = "work2"
+                document.getElementById("Delete3").id = "Delete2"
+            }
+            if(document.getElementById("work4") !== null)
+            {
+                document.getElementById("work4").id = "work3"
+                document.getElementById("Delete4").id = "Delete3"
+            }
+            if(document.getElementById("work5") !== null)
+            {
+                document.getElementById("work5").id = "work4"
+                document.getElementById("Delete5").id = "Delete4"
+            }
             break;
         case 'Delete2':
-            document.getElementById("Art2").src = "Unavailable.png";
-            document.getElementById("Art2").style.objectFit = "contain";
+            document.getElementById("work2").id = "Deleted"
+            if(document.getElementById("work3") !== null)
+            {
+                document.getElementById("work3").id = "work2"
+                document.getElementById("Delete3").id = "Delete2"
+            }
+            if(document.getElementById("work4") !== null)
+            {
+                document.getElementById("work4").id = "work3"
+                document.getElementById("Delete4").id = "Delete3"
+            }
+            if(document.getElementById("work5") !== null)
+            {
+                document.getElementById("work5").id = "work4"
+                document.getElementById("Delete5").id = "Delete4"
+            }
             break;
         case 'Delete3':
-            document.getElementById("Art3").src = "Unavailable.png";
-            document.getElementById("Art3").style.objectFit = "contain";
+            document.getElementById("work3").id = "Deleted"
+            if(document.getElementById("work4") !== null)
+            {
+                document.getElementById("work4").id = "work3"
+                document.getElementById("Delete4").id = "Delete3"
+            }
+            if(document.getElementById("work5") !== null)
+            {
+                document.getElementById("work5").id = "work4"
+                document.getElementById("Delete5").id = "Delete4"
+            }
             break;
         case 'Delete4':
-            document.getElementById("Art4").src = "Unavailable.png";
-            document.getElementById("Art4").style.objectFit = "contain";
+            document.getElementById("work4").id = "Deleted"
+            if(document.getElementById("work5") !== null)
+            {
+                document.getElementById("work5").id = "work4"
+                document.getElementById("Delete5").id = "Delete4"
+            }
             break;
          case 'Delete5':
-            document.getElementById("Art5").src = "Unavailable.png";
-            document.getElementById("Art5").style.objectFit = "contain";
+            document.getElementById("work5").id = "Deleted"
             break;
         default:
             console.log('Error');

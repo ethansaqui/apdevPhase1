@@ -20,7 +20,8 @@ $(document).ready(function() {
             $(this).removeClass("rotate-button");
         }
     })
+})
 
-
-
-}) 
+function toggleUpload(){
+    document.getElementById("uploadpopup").classList.toggle("active");
+}

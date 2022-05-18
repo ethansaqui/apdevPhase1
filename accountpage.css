@@ -414,7 +414,30 @@
 #work5 img{
     object-fit: cover;
 }
-
+.Work #OptionShadow{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+.Work:hover #OptionShadow{
+    visibility: visible;
+}
+.Work:hover #OptionShadow .Delete{
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    height: 100%;
+    width: 10%;
+    left: 90%;
+    outline: none;
+    border: none;
+}
 /* SCROLL BAR CODE
     Taken From: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar
 */

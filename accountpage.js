@@ -1,6 +1,7 @@
 function toggleUpload(){
     document.getElementById("uploadpopup").classList.toggle("active");
 }
+
 function DeleteWork(clicked_id){
     var UsedId = clicked_id;
     console.log(UsedId)
@@ -76,6 +77,7 @@ function DeleteWork(clicked_id){
             break;
     }
 }
+
 function Follow(){
     document.getElementById("followercount").innerHTML = "1 ";
 }

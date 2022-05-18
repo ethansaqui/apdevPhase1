@@ -7,7 +7,7 @@
 }
 
 .header {
-    background-image: url('Header.png');
+    background-image: url('images/Header.png');
     margin: 0%;
     padding: 0%;
     border: 0;
@@ -108,7 +108,7 @@
 
 .footer {
     position: absolute;
-    background-image: url('Footer.png');
+    background-image: url('images/Footer.png');
     margin: 0%;
     margin-top: 80px;
     padding: 0%;

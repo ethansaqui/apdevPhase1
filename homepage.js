@@ -31,41 +31,32 @@ $(document).ready(function() {
         var imgsrc = $(this).attr('src');
         
         const img = new Image();
+
         var size;
         img.src = imgsrc;
-
-        size = 700;
-        if(img.height > img.width) 
-            size = 600;
-
-        $(window).on('resize', () => {
-            if(window.matchMedia('(max-width:768px)').matches) {
-                $(".posts-wrapper .popup-image .popup").css("width", 400);
-            }
-            else {
-                $(".posts-wrapper .popup-image .popup").css("width", size);
-            }
-        })
 
         var caption = $(this).parents(".image-container").find(".caption").text();
         $(".posts-wrapper .popup-image .caption").text(caption);
         var artist = $(this).parents(".image-container").find(".artist").text();
         $(".posts-wrapper .popup-image .artist").text(artist);
-        
-        $(".posts-wrapper .popup-image .popup").css("width", size);
-        console.log(size);
+
+        var pfpsrc = $(this).parents(".parent").find("#profile-picture img").attr('src');
+        $(".popup-image #profile-picture img").attr('src', pfpsrc);
+
+     
+
         console.log($(".posts-wrapper .popup-image .popup").css("width"));
         $(".posts-wrapper .popup-image").css("display", "block");
         $(".popup-image .popup").attr('src', imgsrc);
     })
 
-    $("#profile-picture img").each(function() { //I LEFT ON THIS FUNCTION, NEED TO MAKE IT SO THAT ALL PROFILE PICS ARE PERFECT CIRCLES
+    $("#profile-picture img").each(function() { 
         var imgsrc = $(this).attr('src');
         const img = new Image();
         console.log(imgsrc);
         img.src = imgsrc;
         if(img.width > img.height) {
-            img.width = img.height;
+            $(this).width = img.height;
             console.log(img.width);
             console.log(img.height);
         }

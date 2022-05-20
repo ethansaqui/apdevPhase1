@@ -1,7 +1,74 @@
 $(document).ready(function() {
     // Comment Functions
     const user = "Anya";
+
+    var commentDOM = $("<form id=\"comment-form\"></form>").html(`
+            <button id="cancel-comment" type="button"> &times; </button>
+            <input type="text" id="comment" name="comment">
+            <input type="button" id="submit-comment" value="Comment">
+        `)
     
+    // Comment Functionality
+    $(".comment-button").on("click", function () {
+        console.log("clicked");
+        var comBtn = $(this);
+        console.log(comBtn);
+        comBtn.after(commentDOM);
+
+        $(".comment-button").each(function () {
+            $(this).css("display", "block");
+        })
+
+        comBtn.css("display", "none");
+    })
+
+    $(".comment-container").on("click","#cancel-comment", function() {
+        $(this).parent().siblings(".comment-button").css("display", "block");
+        console.log($(this).parent().siblings(".comment-button"));
+        $(this).parent("#comment-form").remove();
+    })
+
+    $(".comment-container").on("click","#submit-comment", function() {
+        console.log("clicked");
+    })
+
+    // Reply Functionality (THIS CAN BE IMPROVED  -JARED)
+
+    var replyDOM = $("<form id=\"reply-form\"></form>").html(`
+            <button id="cancel-reply" type="button"> &times; </button>
+            <input type="text" id="reply" name="reply">
+            <input type="button" id="submit-reply" value="Reply">
+        `)
+
+    $(".reply").on("click", function () {
+        console.log("clicked");
+        var comBtn = $(this);
+        console.log(comBtn);
+        comBtn.parent().after(replyDOM);
+
+        $(".reply").each(function () {
+            $(this).css("display", "block");
+        })
+
+        comBtn.css("display", "none");
+    })
+
+    $(".comment-container").on("click","#cancel-reply", function() {
+        $(this).parent().siblings(".comment-footer").children(".reply").css("display", "block");
+        console.log($(this).parent().siblings(".reply"));
+        $(this).parent("#reply-form").remove();
+    })
+
+    $(".comment-container").on("click","#submit-reply", function() {
+        console.log("clicked");
+    })
+
+    
+
+    
+
+    
+
     // Hide Show Replies for comments without replies
     $(".comment").each(function (){
         let c = $(this);
@@ -16,8 +83,6 @@ $(document).ready(function() {
     $(".comment-text h3").each(function () {
         var cText = $(this);
         if(cText.text() != user) {
-            console.log("in")
-            console.log(cText.parent());
             cText.parents(".comment").find(".user").css("display", "none")
         }
     })

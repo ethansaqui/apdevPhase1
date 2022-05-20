@@ -417,6 +417,29 @@ a:hover {
     cursor: pointer;
 }
 
+#comment, #reply{
+    width: 60%;
+    margin: 0 40px;
+}
+
+
+
+#submit-comment, #cancel-comment, #submit-reply, #cancel-reply{
+    background-color: #1F2833;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font: 10px Poppins;
+    z-index: 10;
+}
+
+#cancel-comment, #cancel-reply {
+    background-color: transparent;
+    font-size: 25px;
+}
 
 /* Post Info and Quality */
 

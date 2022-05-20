@@ -487,6 +487,9 @@
     outline: none;
     border: none;
 }
+.Work #OptionShadow .Delete:hover{
+    cursor: pointer;
+}
 
 .Work #OptionShadow .Edit{
     background-color: transparent;
@@ -500,6 +503,10 @@
     left: 80%;
     outline: none;
     border: none;
+}
+
+.Work #OptionShadow .Edit:hover{
+    cursor: pointer;
 }
 
 /* SCROLL BAR CODE

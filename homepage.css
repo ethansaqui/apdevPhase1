@@ -23,7 +23,6 @@ html, body {
     width: 100%;
     height: 65px;
     background:#1F2833;
-    text-align: center;
     display: inline-block;
 }
 
@@ -40,6 +39,7 @@ html, body {
     height: 100%;
     border-radius: 50%;
     border: #000000;
+    cursor: pointer;
 }
 
 /* FROM GABE */
@@ -83,11 +83,11 @@ html, body {
     color: #66FCF1 ;
 }
 
-#upload{
-    position: absolute;
+#upload, #logout{
+    position: fixed;
     width: 117px;
     height: 27px;
-    left: 73vw;
+    right: 300;
     top: 22px;
     background: #66FCF1;
     border-radius: 35px;
@@ -100,13 +100,18 @@ html, body {
     z-index: 2;
 }
 
-#upload:hover {
+#upload:hover, #logout:hover {
     cursor: pointer;
     background-color: #1F2833;
     color: #66FCF1;
     font-weight: 400px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#logout {
+    right: 100;
+}
+
 /* Pop Up Code */
 .popup .overlay{
     position: fixed;

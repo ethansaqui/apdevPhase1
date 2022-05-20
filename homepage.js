@@ -63,12 +63,6 @@ $(document).ready(function() {
         console.log("clicked");
     })
 
-    
-
-    
-
-    
-
     // Hide Show Replies for comments without replies
     $(".comment").each(function (){
         let c = $(this);

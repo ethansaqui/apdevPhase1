@@ -430,7 +430,7 @@
 .Work:hover #OptionShadow{
     visibility: visible;
 }
-.Work:hover #OptionShadow .Delete{
+.Work #OptionShadow .Delete{
     background-color: transparent;
     position: absolute;
     color: white;
@@ -442,6 +442,21 @@
     outline: none;
     border: none;
 }
+
+.Work #OptionShadow .Edit{
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: large;
+    height: 100%;
+    width: 10%;
+    left: 80%;
+    outline: none;
+    border: none;
+}
+
 /* SCROLL BAR CODE
     Taken From: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar
 */

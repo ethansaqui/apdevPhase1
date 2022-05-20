@@ -116,13 +116,50 @@
     background-color:#1F2833;
     z-index: 4;
 }
+
+.popup .EditContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 849px;
+    height: 403px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 300ms ease-in-out;
+    background-color:#1F2833;
+    z-index: 4;
+}
+
+.EditContent #EditHeader{
+    position: absolute;
+    left: 39%;
+    top: 7%;
+    font-size: 30px;
+    font-family: Poppins;
+    color: #66FCF1;
+}
+
+.EditContent #CaptionBox input[type=caption]{
+    position: absolute;
+    width: 814px;
+    height: 233px;
+    left: 18px;
+    top: 92px;
+    background: white; 
+}
 .popup.active .overlay{
     display: block;
 }
+
 .popup.active .Content{
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
 }
+
+.popup.active .EditContent{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .UploadBox{
     position: absolute;
     width: 815px;
@@ -164,6 +201,14 @@
     border-radius: 35px;
     width: 117px;
     height: 23px;  
+}
+.EditContent #ConfirmUpload{
+    left: 196px;
+    top: 355px;
+}
+.EditContent #Cancel{
+    left: 513px;
+    top: 355px;
 }
 
 #Cancel:hover {

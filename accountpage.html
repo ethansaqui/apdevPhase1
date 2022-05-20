@@ -79,35 +79,49 @@
                 <img src="images/Art1.png" alt="Art1" id="Art1">
                 <span id="OptionShadow">
                     <button class="Delete" id="Delete1" onclick="DeleteWork(this.id)">X</button>
-                    <button class="Edit" id="Edit1" >&#9999</button> 
+                    <button class="Edit" id="Edit1" onclick="toggleEdit()" >&#9999</button> 
                 </span>
                 
             </span>
             <span class="Work" id="work2"> <img src="images/Art2.jpg" alt="Art2" id="Art2">
                 <span id="OptionShadow">
                     <button class="Delete" id="Delete2" onclick="DeleteWork(this.id)">X</button>
-                    <button class="Edit" id="Edit2" >&#9999</button> 
+                    <button class="Edit" id="Edit2" onclick="toggleEdit()" >&#9999</button> 
                 </span>
             </span>
             <span class="Work" id="work3"> <img src="images/Art3.jpg" alt="Art3" id="Art3">
                 <span id="OptionShadow">
                     <button class="Delete" id="Delete3" onclick="DeleteWork(this.id)">X</button>
-                    <button class="Edit" id="Edit3" >&#9999</button> 
+                    <button class="Edit" id="Edit3" onclick="toggleEdit()" >&#9999</button> 
                 </span>
             </span>
             <span class="Work" id="work4"> <img src="images/Art4.jpg" alt="Art4" id="Art4">
                 <span id="OptionShadow">
                     <button class="Delete" id="Delete4" onclick="DeleteWork(this.id)">X</button>
-                    <button class="Edit" id="Edit4" >&#9999</button> 
+                    <button class="Edit" id="Edit4" onclick="toggleEdit()">&#9999</button> 
                 </span>
             </span>
             <span class="Work" id="work5"> <img src="images/Art5.jpg" alt="Art5" id="Art5">
                 <span id="OptionShadow">
                     <button class="Delete" id="Delete5" onclick="DeleteWork(this.id)">X</button>
-                    <button class="Edit" id="Edit5" >&#9999</button> 
+                    <button class="Edit" id="Edit5" onclick="toggleEdit()" >&#9999</button> 
                 </span>
             </span>
             <span class="Work" id="Deleted"></span>
+        </div>
+        <div class="popup" id="Editpopup">
+            <div class="overlay"></div>
+            <div class="EditContent">
+                <h1 id="EditHeader">Edit Caption!</h1>
+                <div id="CaptionBox">
+                    <form>
+                        <input type="Caption" placeholder="Insert Caption Here">
+                    </form>
+                </div>
+                    <button id="ConfirmUpload">Change</button>
+                    <button id="Cancel" onclick="toggleEdit()">Cancel</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>

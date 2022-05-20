@@ -39,6 +39,7 @@
     font-weight: 100;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:767px) {
@@ -69,11 +70,11 @@
     color: #66FCF1 ;
 }
 
-#upload{
-    position: absolute;
+#upload, #logout{
+    position: fixed;
     width: 117px;
     height: 27px;
-    left: 73vw;
+    right: 300;
     top: 22px;
     background: #66FCF1;
     border-radius: 35px;
@@ -84,6 +85,18 @@
     line-height: 22px;
     color: #FFFFFF;
     z-index: 2;
+}
+
+#upload:hover, #logout:hover {
+    cursor: pointer;
+    background-color: #1F2833;
+    color: #66FCF1;
+    font-weight: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logout {
+    right: 100;
 }
 
 #upload:hover {
@@ -487,6 +500,9 @@
     outline: none;
     border: none;
 }
+.Work #OptionShadow .Delete:hover{
+    cursor: pointer;
+}
 
 .Work #OptionShadow .Edit{
     background-color: transparent;
@@ -500,6 +516,10 @@
     left: 80%;
     outline: none;
     border: none;
+}
+
+.Work #OptionShadow .Edit:hover{
+    cursor: pointer;
 }
 
 /* SCROLL BAR CODE

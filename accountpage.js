@@ -1,6 +1,9 @@
 function toggleUpload(){
     document.getElementById("uploadpopup").classList.toggle("active");
 }
+function toggleEdit(){
+    document.getElementById("Editpopup").classList.toggle("active");
+}
 
 function DeleteWork(clicked_id){
     var UsedId = clicked_id;

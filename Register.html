@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" media="all" href="thecss.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/thecss.css">
     <title>Log in to YouPortfolio</title>
 </head>
 
@@ -25,7 +25,7 @@
                 username = document.getElementById("username").value;
                 password = document.getElementById("password").value;
                 if (username == "admin") {
-                    window.location.href = "Homepage.html";
+                    window.location.href = "/homepage";
                 }
 
             });
@@ -37,7 +37,7 @@
         <button id="register">Login NOW</button>
         <script>
             document.getElementById("register").onclick = function() {
-                location.href = "Login.html";
+                location.href = "/";
             }
         </script>
     </div>

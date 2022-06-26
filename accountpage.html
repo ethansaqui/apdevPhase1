@@ -4,6 +4,7 @@
             YouAccount
         </title>
         <link rel="stylesheet" type="text/css"   href="/css/accountpage.css">
+        <script src="scripts/jquery-3.6.0.min.js"></script>
         <script src="scripts/accountpage.js" ></script>
     </head>
 
@@ -43,7 +44,25 @@
             <img src="/images/SPyFamily.png" alt="CoverPic">
         </div>
         <div class="ProfilePicture">
-            <img src="/images/anya.png" alt="ProfilePicture"/>
+            <span class="ChangePFP">
+                <button class="PFPButton" onclick="toggleChange()">Change Photo</button>
+            </span>
+            <img id="PFP" src="/images/anya.png" alt="ProfilePicture"/>
+        </div>
+        <div class="popup" id="PFPPopup">
+            <div class="overlay"></div>
+            <div class="PFPcontent">
+                <div class="UploadBox">
+                    <img src="/images/UploadPlaceHolder.jpg">
+                </div>
+                <form action="/ChangePhoto" method="post" enctype="multipart/form-data" id="ChoosePhoto">
+                    <input type="file" name="PFP">
+                </form>
+                <button id="ConfirmUpload">Upload</button>
+                <button id="Cancel" onclick="toggleChange()">Cancel</button>
+            </div>  
+        </div>
+            </div>
         </div>
         <div class="userBanner">
             <h2 id="User">Anya</h2>

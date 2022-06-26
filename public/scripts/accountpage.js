@@ -1,8 +1,13 @@
+
 function toggleUpload(){
     document.getElementById("uploadpopup").classList.toggle("active");
 }
 function toggleEdit(){
     document.getElementById("Editpopup").classList.toggle("active");
+}
+
+function toggleChange(){
+    document.getElementById("PFPPopup").classList.toggle("active");
 }
 
 function DeleteWork(clicked_id){
